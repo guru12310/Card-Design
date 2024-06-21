@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<style>
+    body{
+        /* background-color: rgb(250, 253, 167); For browsers that do not support gradients */
+        background-image: linear-gradient(rgb(137, 222, 146), rgb(44, 179, 111),rgba(194, 255, 214, 0.577));
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+    .header{
+        color: white;
+         font-size: large;
+         font-weight: bold;
+        
+    }
+    .container{
+        background:linear-gradient(300deg,#3572EF,#3ABEF9,#A7E6FF);
+        animation: gradient-animation 18s ease infinite;
+        background-size: 180% 180%;
+        height: 18rem;
+        width: 25rem;
+        box-shadow: 10px 10px;
+    }
+    @keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  0% {
+    background-position: 0% 50%;
+  }
+}
+    .name{
+        font-weight: bold;
+        font-size: 20px;
+        margin-left:2rem ;
+    }
+    .mail{
+        font-size: 15px;
+        margin-left: 2.5rem;
+    }
+    .para{
+        font-size: 15px;
+        height: 2rem;
+        width: 20rem;
+        margin-left: 3rem;
+        margin-bottom: 1px;
+    }
+    .buton{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .lines{
+        display: flex;
+        justify-content: center;    
+        gap:3rem;
+        flex-basis: 10px;
+        margin-bottom:-15px;
+    }
+    .des{
+        margin-bottom: 1px;
+    }
+
+</style>
+<body>
+    <div class="header">
+        <h1>Simple Card Layout</h1>
+    </div>
+    <div class="container">
+        <p class="name items">Guru Moorthi</p>
+        <p class="mail items">@guru</p>
+        <p class="para items">If you like my work, consider supporting me on paypal and help me make a dream come true</p>
+        <div class="lines">
+        <p class="views items ">74.3M</p>
+        <p class="rank items ">17</p>
+        <p class="downloads items ">45M</p>
+    </div>
+    <div class="lines des">
+        <p>views</p>
+        <p>Ranks</p>
+        <p>Lists</p>
+        </div>
+    <div class="buton">
+        
+        <button  type="button items">Follow</button>
+        <button  type="button items">view profile</button>
+    </div>
+    </div>
+</body>
+</html>
